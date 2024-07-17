@@ -1,0 +1,47 @@
+.clickButton {
+	margin-top: 30px;
+	cursor: pointer;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border: 5px solid;
+	background-image: url('../../../assets/final.jpg');
+	background-size: 80%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	box-shadow: 0px 0px 16px 0px rgba(138, 143, 254, 0.05);
+}
+
+.clickButton:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.plusOne {
+	position: absolute;
+	font-family: Inter;
+	text-shadow: 0px 0px 4px rgba(234, 182, 64, 0.25);
+	font-size: 24px;
+	font-weight: 800;
+	background: linear-gradient(180deg, #e8c547 0%, #ef882b 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	pointer-events: none;
+	user-select: none;
+	animation: move-up 2s forwards;
+}
+@keyframes move-up {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+}

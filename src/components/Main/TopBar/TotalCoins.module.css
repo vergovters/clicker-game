@@ -1,0 +1,17 @@
+.totalCoins {
+	font-size: 24px;
+	font-weight: 800;
+	background: linear-gradient(180deg, #e8c547 0%, #ef882b 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	gap: 8px; /* Adjust gap between text and image */
+}
+
+.totalCoins img {
+	width: 24px;
+	height: 24px;
+}

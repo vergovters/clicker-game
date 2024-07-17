@@ -1,5 +1,6 @@
 {
 	"compilerOptions": {
+		"noEmitOnError": false,
 		"esModuleInterop": true,
 		"jsx": "react",
 		"lib": ["ES2021", "dom"],

@@ -35,7 +35,7 @@
 				"importOrderSortSpecifiers": true
 			}
 		],
-
+		"no-unused-vars": "warn",
 		"@typescript-eslint/no-namespace": "off",
 		"no-duplicate-imports": "error"
 	}

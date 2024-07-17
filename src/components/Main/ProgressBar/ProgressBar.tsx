@@ -8,14 +8,16 @@ const ProgressBar = () => {
 	const coins = useAppSelector((state) => state.coins.count);
 
 	return (
-		<div className={styles.progressBar}>
-			<div className={styles.progress} style={{ width: `${coins}%` }}></div>
-			<div className={styles.progressTextContainer}>
-				<p className={styles.progressText}>
-					{coins} / {maxProgress}
-				</p>
+		<>
+			<div className={styles.progressBar}>
+				<div className={styles.progress} style={{ width: `${coins}%` }}></div>
+				<div className={styles.progressTextContainer}>
+					<p className={styles.progressText}>
+						{coins} / {maxProgress}
+					</p>
+				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 

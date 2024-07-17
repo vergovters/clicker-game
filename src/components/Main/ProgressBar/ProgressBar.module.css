@@ -5,7 +5,10 @@
 	border-radius: 4px;
 	overflow: hidden;
 	margin-top: 10px;
+	max-width: 250px;
 	position: relative;
+	display: flex;
+	flex-direction: row;
 }
 
 .progress {

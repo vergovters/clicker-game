@@ -23,7 +23,14 @@ function App() {
 				<div id='stars2'></div>
 				<div id='stars3'></div>
 				<MainScreen />
-				{user}
+				{user && (
+					<div className='user-info'>
+						<p>Username: {user.username}</p>
+						<p>
+							Name: {user.first_name} {user.last_name}
+						</p>
+					</div>
+				)}
 			</div>
 		</Provider>
 	);

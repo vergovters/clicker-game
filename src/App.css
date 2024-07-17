@@ -1,15 +1,3 @@
-.wrapper {
-	max-height: 100vh;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
-	overflow: hidden;
-	background: radial-gradient(ellipse at bottom, #141e3f 0%, #050508 90%);
-}
-
 #stars {
 	width: 1px;
 	height: 1px;
@@ -2062,6 +2050,18 @@
 		498px 1947px #fff,
 		617px 880px #fff,
 		240px 403px #fff;
+}
+
+.wrapper {
+	max-height: 100vh;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+	overflow: hidden;
+	background: radial-gradient(ellipse at bottom, #141e3f 0%, #050508 90%);
 }
 
 @keyframes animStars {

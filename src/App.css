@@ -2062,6 +2062,7 @@
 	color: white;
 	overflow: hidden;
 	background: radial-gradient(ellipse at bottom, #141e3f 0%, #050508 90%);
+	position: relative;
 }
 
 @keyframes animStars {

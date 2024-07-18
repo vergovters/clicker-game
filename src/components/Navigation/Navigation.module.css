@@ -1,0 +1,15 @@
+.navigation ul {
+	display: flex;
+	position: absolute;
+	left: 50%;
+	bottom: 0%;
+	transform: translateX(-54%);
+}
+
+.navigation li {
+	margin: 0 10px;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

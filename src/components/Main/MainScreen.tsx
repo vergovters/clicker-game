@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import styles from './MainScreen.module.css';
 import ProgressBar from './ProgressBar/ProgressBar';
 import ClickButton from './ClickButton/ClickButton';
-import TotalCoins from './TopBar/TotalCoins';
 import PlanetBar from './PlanetBar/PlanetBar';
 import LevelUp from './LevelUp/LevelUp';
 
@@ -20,7 +19,6 @@ const MainScreen = () => {
 
 	return (
 		<div className={styles.container}>
-			<TotalCoins />
 			<PlanetBar />
 			<ProgressBar />
 			{user && (

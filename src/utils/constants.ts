@@ -1,3 +1,2 @@
-export const INCREMENT = 'INCREMENT';
-export const DECREMENT = 'DECREMENT';
-export const RESET = 'RESET';
+export const SHOP_PAGE = '/shop';
+export const MAIN_PAGE = '/';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAppSelector } from 'src/hooks/useRedux';
-import coin from '../../../assets/coin.png';
+import coin from '../../assets/coin.png';
 import styles from './TotalCoins.module.css';
 
 const TopBar = () => {

@@ -14,7 +14,7 @@ const LevelUp = () => {
 	const planetDetails = getCurrentPlanet(lvl);
 
 	useEffect(() => {
-		if (coins >= planetDetails.price) {
+		if (coins >= planetDetails.price && lvl < 7) {
 			setLvlUp(true);
 		} else {
 			setLvlUp(false);

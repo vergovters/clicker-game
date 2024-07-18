@@ -1,8 +1,11 @@
 import React from 'react';
 import './App.css';
-import MainScreen from './components/Main/MainScreen';
+import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './store';
+import AppRouter from './AppRouter';
+import Navigation from './components/Navigation/Navigation';
+import TotalCoins from './components/TopBar/TotalCoins';
 
 function App() {
 	return (
@@ -11,7 +14,11 @@ function App() {
 				<div id='stars'></div>
 				<div id='stars2'></div>
 				<div id='stars3'></div>
-				<MainScreen />
+				<BrowserRouter>
+					<TotalCoins />
+					<AppRouter />
+					<Navigation />
+				</BrowserRouter>
 			</div>
 		</Provider>
 	);

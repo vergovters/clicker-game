@@ -1,0 +1,25 @@
+.modalList {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.backdrop {
+	padding: 5px;
+	background: radial-gradient(ellipse at bottom, #141e3f 0%, #050508 90%);
+}
+
+.modalList button {
+	cursor: pointer;
+	color: white;
+	background-color: transparent;
+	border: none;
+}

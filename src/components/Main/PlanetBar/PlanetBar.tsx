@@ -18,7 +18,7 @@ const PlanetBar = () => {
 				{planetDetails.title} {planetDetails.id} / 7
 			</button>
 
-			{isOpen && <ModalList isOpen={isOpen} setIsOpen={setIsOpen} />}
+			{isOpen && <ModalList setIsOpen={setIsOpen} />}
 		</>
 	);
 };

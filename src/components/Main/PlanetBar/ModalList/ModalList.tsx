@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './ModalList.module.css';
 import { planets } from 'src/helpers/Planets';
 
-const ModalList = ({ isOpen: boolean, setIsOpen }) => {
+const ModalList = ({ setIsOpen }) => {
 	return (
 		<div className={styles.modalList}>
 			<div className={styles.backdrop}>

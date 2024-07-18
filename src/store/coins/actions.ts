@@ -1,4 +1,6 @@
 import { createAction } from '@reduxjs/toolkit';
-import { INCREMENT } from './types';
+import { DECREMENT, INCREMENT } from './types';
 
 export const increment = createAction<void>(INCREMENT);
+
+export const decrement = createAction<number>(DECREMENT);

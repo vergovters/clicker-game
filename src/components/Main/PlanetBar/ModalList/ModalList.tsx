@@ -13,7 +13,6 @@ const ModalList = ({ setIsOpen }) => {
 							console.log(planet),
 							(
 								<div key={planet.id}>
-									<img src={planet.image} className={styles.image} alt='' />
 									{planet.title} -{planet.price}
 								</div>
 							)

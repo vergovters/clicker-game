@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { INCREMENT } from 'src/utils/constants';
+import { decrement, increment } from './actions';
 interface CoinState {
 	count: number;
 	isLoading: boolean;
@@ -17,8 +17,12 @@ export const coinSlice = createSlice({
 	initialState,
 	reducers: {},
 	extraReducers: (builder) => {
-		builder.addCase(INCREMENT, (state) => {
+		builder.addCase(increment, (state) => {
 			state.count += 1;
+		});
+
+		builder.addCase(decrement, (state, action) => {
+			state.count -= action.payload;
 		});
 	},
 });

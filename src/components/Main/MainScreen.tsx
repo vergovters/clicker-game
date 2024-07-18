@@ -4,6 +4,7 @@ import ProgressBar from './ProgressBar/ProgressBar';
 import ClickButton from './ClickButton/ClickButton';
 import TotalCoins from './TopBar/TotalCoins';
 import PlanetBar from './PlanetBar/PlanetBar';
+import LevelUp from './LevelUp/LevelUp';
 
 const MainScreen = () => {
 	const [user, setUser] = useState(null);
@@ -31,6 +32,7 @@ const MainScreen = () => {
 				</div>
 			)}
 			<ClickButton />
+			<LevelUp />
 		</div>
 	);
 };

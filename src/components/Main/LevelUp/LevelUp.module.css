@@ -1,3 +1,12 @@
 .lvlUpTrans {
+	width: 100px;
+	height: 25px;
 	color: transparent;
+}
+
+.lvlUp {
+	cursor: pointer;
+	color: white;
+	width: 100px;
+	height: 25px;
 }

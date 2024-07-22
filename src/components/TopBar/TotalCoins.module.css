@@ -1,6 +1,7 @@
 .totalCoins {
 	position: absolute;
-	right: 25px;
+	right: 50%;
+	transform: translateX(50%);
 	top: 30px;
 	font-family: Inter;
 	font-size: 24px;

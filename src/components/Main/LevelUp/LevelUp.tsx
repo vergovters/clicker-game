@@ -34,7 +34,7 @@ const LevelUp = () => {
 					Level up!
 				</p>
 			) : (
-				<p className={styles.lvlUpTrans}>Level up!</p>
+				<p className={styles.lvlUpTrans}></p>
 			)}
 		</div>
 	);

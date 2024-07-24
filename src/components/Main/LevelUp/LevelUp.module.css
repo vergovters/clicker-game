@@ -1,12 +1,34 @@
 .lvlUpTrans {
 	width: 100px;
-	height: 25px;
+	height: 30px;
 	color: transparent;
 }
 
 .lvlUp {
 	cursor: pointer;
-	color: white;
-	width: 100px;
+	color: #daa520;
+	width: 76px;
+	background-color: #daa520;
 	height: 25px;
+	border: 2px solid #daa520;
+	padding: 3px 5px;
+	border-radius: 7px;
+	font-weight: bold;
+	background: linear-gradient(
+		45deg,
+		rgba(242, 215, 12, 1) 0%,
+		rgba(255, 255, 255, 1) 56%,
+		rgba(252, 235, 0, 1) 96%
+	);
+	animation: levitate 2.5s infinite ease-in-out;
+}
+
+@keyframes levitate {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-5px);
+	}
 }

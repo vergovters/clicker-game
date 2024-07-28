@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useAppDispatch, useAppSelector } from 'src/hooks/useRedux';
 import { INCREMENT } from 'src/store/coins/types';
 import styles from './ClickButton.module.css'; // Import your CSS module
@@ -10,27 +10,27 @@ import planet5 from 'src/assets/planets/planet5.png';
 import planet6 from 'src/assets/planets/planet6.png';
 import planet7 from 'src/assets/planets/planet7.png';
 
+const planets = [planet1, planet2, planet3, planet4, planet5, planet6, planet7];
+
 const ClickButton = () => {
 	const dispatch = useAppDispatch();
 	const lvl = useAppSelector((state) => state.user.currentLvl);
 	const buttonRef = useRef<HTMLButtonElement>(null);
+	const [isAnimating, setIsAnimating] = useState(false);
 
 	useEffect(() => {
-		const background = buttonRef.current;
-		if (lvl === 1) {
-			background.style.backgroundImage = `url(${planet1})`;
-		} else if (lvl === 2) {
-			background.style.backgroundImage = `url(${planet2})`;
-		} else if (lvl === 3) {
-			background.style.backgroundImage = `url(${planet3})`;
-		} else if (lvl === 4) {
-			background.style.backgroundImage = `url(${planet4})`;
-		} else if (lvl === 5) {
-			background.style.backgroundImage = `url(${planet5})`;
-		} else if (lvl === 6) {
-			background.style.backgroundImage = `url(${planet6})`;
-		} else if (lvl === 7) {
-			background.style.backgroundImage = `url(${planet7})`;
+		const button = buttonRef.current;
+		if (button) {
+			button.style.backgroundImage = `url(${planets[lvl - 1]})`;
+
+			if (isAnimating) {
+				button.classList.add(styles.shrinkAndFly);
+				setTimeout(() => {
+					button.classList.remove(styles.shrinkAndFly);
+					button.style.backgroundImage = `url(${planets[lvl - 1]})`;
+					setIsAnimating(false);
+				}, 500);
+			}
 		}
 	}, [lvl]);
 
